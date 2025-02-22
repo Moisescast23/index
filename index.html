@@ -7,14 +7,16 @@
 
 </head>
 <body>
-    <h1>Página de Bienvenida</h1>
-    <p id="mensaje" style="color: red;">Este es un párrafo</p>
-    
+    <div id="mensaje"></div>
+    <div id="resultado"></div>
+
     <script>
-        document.getElementById("mensaje").innerHTML="Certus";
-        document.write ("<h2 style='color: blue;' > Bienvenidos </h2>")
-        window.alert("Bienvenido a Certus")
-        console.log("Bienvenido a Certus")
+        var mensaje="Bienvenido a Certus";
+        document.getElementById("mensaje").innerHTML=mensaje;
+        var valor1=10
+        var valor2=20
+        var suma=valor1+valor2;
+        document.getElementById("resultado").innerHTML="resultado: "+suma;
     </script>
 </body>
 </html>
